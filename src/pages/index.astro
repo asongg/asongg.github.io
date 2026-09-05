@@ -1,0 +1,197 @@
+---
+import '../styles/global.css';
+
+const experience = [
+  {
+    period: 'May 2026 - Aug 2026',
+    role: 'Software Engineering Intern',
+    org: 'Capital One',
+    summary:
+      'Cloud Operations and Resilience Engineering (CORE); full-stack development on network security intake platform.',
+    tags: ['Node.js', 'Python', 'Jenkins'],
+  },
+  {
+    period: 'May 2025 - Aug 2025',
+    role: 'Software Engineering Intern',
+    org: 'Johns Hopkins APL',
+    summary:
+      'Built secure service tooling across dependency graphs, X.509 validation, and code environment sandboxing.',
+    tags: ['Java', 'Jython', 'X.509', 'Sandboxing'],
+  },
+];
+
+const research = [
+  {
+    period: 'May 2026 - Present',
+    title: 'LLM Researcher',
+    org: 'DART Lab, University of Virginia',
+    summary:
+      'Building LLM agents that audit SIGMA, Elastic, and Splunk detection rules with confidence scoring and cited threat intelligence.',
+    tags: ['Python', 'OpenAI API', 'MITRE ATT&CK', 'CVE'],
+    link: null,
+  },
+  {
+    period: 'Jun 2026 - Present',
+    title: 'NSF REU Researcher',
+    org: 'University of Virginia',
+    summary:
+      'Selected for a $10,000 research stipend supporting in-context reinforcement learning research.',
+    tags: ['Reinforcement Learning', 'In-Context Learning', 'NSF REU'],
+    link: null,
+  },
+  {
+    period: '2024 - 2025',
+    title: 'Research Co-Author',
+    org: 'UChicago NOISE Lab',
+    summary:
+      'Co-authored a paper comparing LLM-generated and therapist-written responses to mental health questions.',
+    tags: ['LLMs', 'Human-Computer Interaction', 'Mental Health'],
+    link: {
+      label: 'arXiv',
+      href: 'https://arxiv.org/abs/2509.12102',
+    },
+  },
+];
+
+const resumeHref = `${import.meta.env.BASE_URL}resume.pdf`;
+
+const cyberArticles = [
+  {
+    title: 'UVA Cyber Defense Team Earns No. 2 National Ranking',
+    source: 'UVA Engineering',
+    href: 'https://engineering.virginia.edu/news-events/news/uva-cyber-defense-team-outperforms-claude-and-collegiate-rivals-earn-no-2-national-ranking',
+  },
+  {
+    title: 'UVA Extends Mid-Atlantic Win Streak to Four',
+    source: 'UVA Engineering',
+    href: 'https://engineering.virginia.edu/news-events/news/uva-extends-win-streak-four-mid-atlantic-collegiate-cyber-defense-competition',
+  },
+  {
+    title: "UVA's Cyber Defense Team Is No. 2 in the Country",
+    source: 'UVA Engineering',
+    href: 'https://engineering.virginia.edu/news-events/news/uvas-cyber-defense-team-no-2-country',
+  },
+  {
+    title: 'UVA Cyber Defense Team Scores Mid-Atlantic Three-peat',
+    source: 'UVA Today',
+    href: 'https://news.virginia.edu/content/news-brief-uva-cyber-defense-team-scores-mid-atlantic-three-peat',
+  },
+];
+
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Austin Song — UVA computer science student building backend systems, security tools, and applied AI. Experience at Capital One and Johns Hopkins APL." />
+    <title>Austin Song | Software Engineering Portfolio</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="site-shell" id="top">
+      <main id="main">
+        <section class="intro" aria-labelledby="name">
+          <h1 id="name">Austin Song</h1>
+          <p class="intro-copy">
+            Hi! I'm Austin, an undergraduate Computer Science
+            student at the University of Virginia. Within software engineering and research, my interests lie in
+            infrastructure, security, and computer networks.
+          </p>
+
+          <nav class="social-links" aria-label="Contact and profiles">
+            <a href="mailto:austinjsong19@gmail.com" aria-label="Email Austin" title="Email">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M2 6v13h4V9l6 4.5L18 9v10h4V6a2 2 0 0 0-3.2-1.6L12 9.5 5.2 4.4A2 2 0 0 0 2 6Z" />
+              </svg>
+            </a>
+            <a href="https://github.com/asongg" aria-label="GitHub" title="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M12 .297C5.37.297 0 5.67 0 12.297c0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.043-1.61-4.043-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.085 1.838 1.237 1.838 1.237 1.07 1.835 2.809 1.305 3.495.998.108-.776.418-1.305.762-1.605-2.665-.305-5.467-1.334-5.467-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.301 1.23a11.52 11.52 0 0 1 3.003-.404c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.655 1.652.243 2.873.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .322.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/austinjsong" aria-label="LinkedIn" title="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52ZM7.93 18.75H4.98V9.2h2.95v9.55ZM6.45 7.9a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42Zm12.3 10.85H15.8V14.1c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.73H9.51V9.2h2.83v1.3h.04c.39-.74 1.36-1.52 2.79-1.52 2.98 0 3.58 1.96 3.58 4.51v5.26Z" />
+              </svg>
+            </a>
+            <a href={resumeHref} aria-label="Résumé (PDF)" title="Résumé (PDF)">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M6 1a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8h-7V1H6Zm7 11v1.5H7V12h6Zm4 3v1.5H7V15h10Zm0 3v1.5H7V18h10Z" />
+                <path d="M14.5 1.5v5H20Z" opacity=".6" />
+              </svg>
+            </a>
+          </nav>
+        </section>
+
+        <section id="experience" class="section" aria-labelledby="experience-heading">
+          <h2 id="experience-heading"><span aria-hidden="true">01 /</span> Experience</h2>
+          <div class="entries">
+            {experience.map((item) => (
+              <article class="entry">
+                <div class="entry-heading"><h3>{item.org}</h3><p class="period">{item.period}</p></div>
+                <p class="role">{item.role}</p>
+                <p>{item.summary}</p>
+              </article>
+            ))}
+          </div>
+          <details>
+            <summary>Tools &amp; technologies</summary>
+            <div class="detail-content">
+              {experience.map((item) => <p><strong>{item.org}</strong> — {item.tags.join(' · ')}</p>)}
+            </div>
+          </details>
+        </section>
+
+        <section id="research" class="section" aria-labelledby="research-heading">
+          <h2 id="research-heading"><span aria-hidden="true">02 /</span> Research</h2>
+          <div class="entries">
+            {research.map((item) => (
+              <article class="entry">
+                <div class="entry-heading"><h3>{item.org}</h3><p class="period">{item.period}</p></div>
+                <p class="role">{item.title}</p>
+                <p>{item.summary} {item.link && <a class="inline-link" href={item.link.href}>Read paper <span aria-hidden="true">↗</span></a>}</p>
+              </article>
+            ))}
+          </div>
+          <details>
+            <summary>Research areas &amp; tools</summary>
+            <div class="detail-content">
+              {research.map((item) => <p><strong>{item.org}</strong> — {item.tags.join(' · ')}</p>)}
+            </div>
+          </details>
+        </section>
+
+        <section id="education" class="section" aria-labelledby="education-heading">
+          <h2 id="education-heading"><span aria-hidden="true">03 /</span> Education &amp; recognition</h2>
+          <div class="entries">
+            <article class="entry">
+              <h3>University of Virginia</h3>
+              <div class="education-line"><p>M.S. Computer Science</p><p class="period">Expected May 2028</p></div>
+              <div class="education-line"><p>B.S. Computer Science</p><p class="period">Expected May 2027</p></div>
+              <p class="role">Cybersecurity Focal Path · GPA 3.90</p>
+            </article>
+            <article class="entry" id="cyber-team">
+              <div class="entry-heading"><h3>UVA Cyber Defense Team</h3><p class="period">2025 &amp; 2026</p></div>
+              <p>2× national silver medalist. 2× Mid-Atlantic champion.</p>
+              <details>
+                <summary>Competition &amp; coverage</summary>
+                <div class="detail-content">
+                  <p>Competed in the Collegiate Cyber Defense Competition (CCDC), defending realistic business networks under live attack. Focused on hardening, incident response, and team communication.</p>
+                  <ul class="article-list">
+                    {cyberArticles.map((article) => <li><a href={article.href}>{article.title} <span aria-hidden="true">↗</span></a><span class="source">{article.source}</span></li>)}
+                  </ul>
+                </div>
+              </details>
+            </article>
+          </div>
+        </section>
+      </main>
+      <footer id="contact">
+        <a href="mailto:austinjsong19@gmail.com">austinjsong19@gmail.com <span aria-hidden="true">↗</span></a>
+        <a href="#top" class="back-top">Back to top <span aria-hidden="true">↑</span></a>
+      </footer>
+    </div>
+  </body>
+</html>
